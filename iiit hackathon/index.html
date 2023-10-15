@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="app.js"></script>
+    <!-- component -->
+<body class="bg-purple-400">
+	<nav class="relative px-4 py-4 flex justify-between items-center bg-white">
+		<a class="text-3xl font-bold leading-none" href="#">
+            <img src="logo 1.0 - Copy.jpg" style="text-align: left; height: 65px;width: 120px; margin-left: 20px;">
+			
+		</a>
+		<div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<title>Mobile menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+				</svg>
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 " >
+            
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-purple-600 font-bold" href="#">About Us</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="https://www.who.int/news-room/fact-sheets/detail/violence-against-women">Get Aware</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Contact</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="/index_heroes.html">Our Heroes</a></li>
+		</ul>
+   
+		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
+		<a class="hidden lg:inline-block py-2 px-6 bg-purple-500 hover:bg-purple-700 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
+      
+	</nav>
+
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+			<div class="flex items-center mb-8">
+				<a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img src="logo 1.0 - Copy.jpg" style="text-align: left; height: 70px;width: 120px; margin-left: 20px;">
+					
+				</a>
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Get Aware</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Our Heroes</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-auto">
+				<div class="pt-6">
+					<a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign in</a>
+					<a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-purple-600 hover:bg-purple-700  rounded-xl" href="#">Sign Up</a>
+				</div>
+				<p class="my-4 text-xs text-center text-gray-400">
+					<span>Copyright © 2021</span>
+				</p>
+			</div>
+		</nav>
+	</div>
+</body>
+
+<script>
+// Burger menus
+document.addEventListener('DOMContentLoaded', function() {
+    // open
+    const burger = document.querySelectorAll('.navbar-burger');
+    const menu = document.querySelectorAll('.navbar-menu');
+
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    // close
+    const close = document.querySelectorAll('.navbar-close');
+    const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});
+</script>
+<!-- <img src="stacked-waves-haikei.svg" width="1550">
+<div className></div>
+<img src="main-image 2.O.jpg" width="400" style=""> -->
+<div style="background-image: url('stacked-waves-haikei.svg'); width: 1550px; height: 1500px; background-size: cover;">
+<div><img src="banner.jpg" style="height:500px; width: 1550px; opacity: 0.89;" >
+  
+</div>
+<h1 class="quotes" style="color: aliceblue; font-size: 1.5rem; font-weight: 700;"><i>"The only way to deal with violence is to stand up and confront it."</i></h1>
+
+<!-- component -->
+<!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css"> -->
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+<section class=" bg-blueGray-0-mt-3">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap">
+      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-1 shadow-lg rounded-lg">
+          <div class="px-4 flex-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center mt-16">
+      <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+        <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+          <i class="fas fa-user-friends text-xl"></i>
+        </div>
+        <h3 class="text-3xl mb-2 font-semibold leading-normal">
+          Working with us is a pleasure
+        </h3>
+        <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+          When you're ready, we're here to listen.
+Above expert counsellor
+        </p>
+        <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
+          About us
+24 hours a day, seven days a week, 365 days a year, the National Domestic Violence Hotline provides essential tools and support to help survivors of domestic violence so they can live their lives free of abuse.
+Our work begins and ends with the interests of survivors of relationship abuse in mind.
+        </p>
+
+        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
+          Vision
+We envision a world where all relationships are positive, healthy, and free from violence.
+        </p>
+        <a href="#" class="font-bold text-blueGray-700 mt-8"></a>
+      </div>
+      <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-2 shadow-lg rounded-lg bg-pink-500">
+          <img alt="..." src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" class="w-full align-middle rounded-t-lg">
+          <blockquote class="relative p-8 mb-4">
+          <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block h-95-px -top-94-px">
+                    <polygon points="-30,95 583,95 583,65" class="text-pink-500 fill-current"></polygon>
+                  </svg>
+         
+            <h4 class="text-xl font-bold text-white">
+              Top Notch Services
+            </h4>
+            <p class="text-md font-light mt-2 text-white">
+              We offer specialized counseling for women affected by domestic violence, combining trauma-informed care, legal advocacy, and holistic well-being strategies. Our approach is rooted in creating a safe, confidential space for survivors to heal and regain independence. Through personalized sessions and collaboration with local support networks, we empower women towards long-term recovery and personal growth, ultimately working towards a future free from violence."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="relative pt-8 pb-6 mt-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+          <div class="text-sm text-blueGray-500 font-semibold py-1">
+            For Emergency <a href="" class="text-blueGray-500 hover:text-gray-800" target="_blank">Click </a> This <a href="" class="text-blueGray-500 hover:text-blueGray-800" target="_blank">Button- Instant Help Deliver!!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+      <div  class=" panick_btn animate-bounce  ml-4 h-16  w-64 flex justify-center items-center">
+        <div class="i h-16 w-64 bg-gradient-to-br from-pink-400 to-purple-700 items-center rounded-xl shadow-2xl  cursor-pointer absolute overflow-hidden transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out" style="padding-left: 200px;">
+        </div>
+        <a href="#" class="text-center text-white font-semibold z-10 pointer-events-none flex justify-content items-center" style="font-weight: 600; font-size: large;"><span class="">
+              <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg></span><pre>Panick Button!!</pre></a>
+      </div>
+
+
+<!-- form -->
+
+<div class="flex justify-center items-center w-screen h-screen" style="background-color: #E2E8F0; padding-left: 190px;" >
+	<!-- COMPONENT CODE -->
+	<div class="container mx-auto my-4 px-4 lg:px-20">
+
+		<div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+			<div class="flex">
+				<h1 class="mt-10 font-bold uppercase text-5xl">Send us your <br /> Complaint</h1>
+			</div>
+			<div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+				<input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="text" placeholder="First Name*" />
+				<input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="text" placeholder="Last Name*" />
+				<input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="email" placeholder="Email*" />
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="number" placeholder="Phone*" />
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="email" placeholder=" Your State*" />
+            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="number" placeholder="Your Address*" />
+        </div>
+				<div class="my-4">
+					<textarea placeholder="Give us a brief about your domestic violence*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+				</div>
+            </div>
+				<div class="my-2 w-1/2 lg:w-1/4">
+					<button class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
+                      focus:outline-none focus:shadow-outline">
+            Send complaint
+          </button>
+				</div>
+			
+                    </form>
+                </div>
+            </div>
+
+
+
+<!--cards1-->
+
+<!-- component -->
+<div class="card">
+<div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4">
+  <img class="w-full h-56 object-cover object-center" src="doctor1.jpeg" alt="avatar">
+  <div class="flex items-center px-6 py-3 bg-gray-900">
+      <svg class="h-6 w-6 text-white fill-current" viewBox="0 0 512 512">
+          <path d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"/>
+      </svg>
+      <h1 class="mx-3 text-white font-semibold text-lg">Expert Counsellor </h1>
+  </div>
+  <div class="py-4 px-6">
+      <h1 class="text-2xl font-semibold text-gray-800">Patterson johnson</h1>
+      <p class="py-2 text-lg text-gray-700">
+        My approach combines trauma-informed care, legal advocacy, and holistic well-being strategies to assist women in their journey towards recovery and independence. Through personalized counseling sessions, I aim here to empower survivors by fostering resilience, self-esteem, and a sense of agency.</p>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+          </svg>
+          <h1 class="px-2 text-sm">700+ Clients</h1>
+      </div>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+          </svg>
+          <h1 class="px-2 text-sm">Alaska</h1>
+      </div>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
+          </svg>
+          <h1 class="px-2 text-sm">patterson@gmail.com</h1>
+      </div>
+  </div>
+</div>
+<!-- card2 -->
+
+<!-- component -->
+<div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4">
+  <img class="w-full h-56 object-cover object-center" src="doctor2 - Copy.webp" alt="avatar">
+  <div class="flex items-center px-6 py-3 bg-gray-900">
+      <svg class="h-6 w-6 text-white fill-current" viewBox="0 0 512 512">
+          <path d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"/>
+      </svg>
+      <h1 class="mx-3 text-white font-semibold text-lg"> Expert Counsellor </h1>
+  </div>
+  <div class="py-4 px-6">
+      <h1 class="text-2xl font-semibold text-gray-800">Jean Milburn</h1>
+      <p class="py-2 text-lg text-gray-700">
+         I am specialized in women's domestic violence. I possess extensive training and experience in providing empathetic support and practical guidance. With a deep understanding of the complexities surrounding abuse, I'm dedicated to empowering survivors, helping them regain control of their lives, and fostering environments of safety and healing.</p>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+          </svg>
+          <h1 class="px-2 text-sm">500+ Clients</h1>
+      </div>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+          </svg>
+          <h1 class="px-2 text-sm">California</h1>
+      </div>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
+          </svg>
+          <h1 class="px-2 text-sm">Jeanmilburn@gmail.com</h1>
+      </div>
+  </div>
+</div>
+
+<!-- card3 -->
+
+<!-- component -->
+<div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4">
+  <img class="w-full h-56 object-cover object-center" src="doctor3.png" alt="avatar">
+  <div class="flex items-center px-6 py-3 bg-gray-900">
+      <svg class="h-6 w-6 text-white fill-current" viewBox="0 0 512 512">
+          <path d="M256 48C150 48 64 136.2 64 245.1v153.3c0 36.3 28.6 65.7 64 65.7h64V288h-85.3v-42.9c0-84.7 66.8-153.3 149.3-153.3s149.3 68.5 149.3 153.3V288H320v176h64c35.4 0 64-29.3 64-65.7V245.1C448 136.2 362 48 256 48z"/>
+      </svg>
+      <h1 class="mx-3 text-white font-semibold text-lg">Expert Counsellor</h1>
+  </div>
+  <div class="py-4 px-6">
+      <h1 class="text-2xl font-semibold text-gray-800">Ruby Thomsan</h1>
+      <p class="py-2 text-lg text-gray-700">An accomplished counselor specialized in supporting women affected by domestic violence methodology integrates trauma-informed care,I"m also a legal advisor for domestic violince victims, and comprehensive well-being practices, guiding women on their path to healing and self-sufficiency.</p>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+          </svg>
+          <h1 class="px-2 text-sm">200+ Clients</h1>
+      </div>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+          </svg>
+          <h1 class="px-2 text-sm">India</h1>
+      </div>
+      <div class="flex items-center mt-4 text-gray-700">
+          <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+              <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
+          </svg>
+          <h1 class="px-2 text-sm">Rubythomsan@gmail.com</h1>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+<footer class="relative bg-blueGray-500 pt-8 pb-6 " style="background-color:#E2E8F0">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+          Find us on any of these platforms, we respond 1-2 business days.
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2021</span><a href="#" class="text-blueGray-500 hover:text-gray-800" target="_blank"> 
+          <a href="#" class="text-blueGray-500 hover:text-blueGray-800"></a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- <div class="sticky" style="height: 100px; width: 1520px; position: fixed; bottom: 0px; 
+background-color:  #FFD3A8;">
+  <span class="button1 -circle"></span>
+  <a href="#" style="font-size: 1.5rem; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #592C5F;">Call tel:+9184726722651</a>
+  <a href="#" style="font-size: 1.5rem; font-weight: bolder; font-family: Arial, Helvetica, sans-serif; color: #592C5F;">Text Start!!</a>
+  
+
+</div>    -->
+
+
+</body>
+</html>
